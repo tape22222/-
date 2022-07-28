@@ -10,10 +10,19 @@ div {
 h2 {
     font-size: 32px;
     margin: 0px;
+    font-weight: 500;
 }
+
+h3 {
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 500;
+}
+
 h4 {
     font-size: 24px;
     margin: 0px;
+    font-weight: 500;
 }
 
 p {
@@ -121,7 +130,7 @@ ul, li {
 
 .info-left-box h4 {
     margin-left: 40px;
-    margin-top: 33px;
+    margin-top: 27px;
 }
 
 .info-left-box p {
@@ -139,6 +148,8 @@ ul, li {
     top: -60px;
     background-color: #1F273D;
 }
+
+/* 2구역 홈페이지 소개*/
 
 .page-info {
     width: 1280px;
@@ -159,11 +170,10 @@ ul, li {
 }
 
 .text0 {
-    width: 100px;
-    margin-left: 10px;
     font-size: 21px;
     color: #505050;
     display: inline-block;
+    text-align: center;
 }
 
 .text1 {
@@ -178,4 +188,108 @@ ul, li {
     position: absolute;
     top: 70px;
     left: 740px;
+}
+
+/* 한옥마을 캐러셀 */
+
+.text2 {
+    margin-top: 130px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.slider {
+    width: 1280px;
+    height: 610px;
+    margin: auto;
+    position: relative;
+}
+
+.button-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+
+.button-icon:last-child {
+    left: 1220px;
+}
+
+.slide-image {
+    width: 1060px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.slide-text-box {
+    width: 700px;
+    height: 141px;
+    position: absolute;
+    top: 470px;
+    left: 290px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.text3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text4 {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: #505050;
+    text-align: center;
+}
+
+.more-button {
+    width: 70px;
+    height: 17px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+
+.more-button p {
+    font-size: 9px;
+    font-weight: 200;
+    letter-spacing: -0.3px;
+    color: #C4C4C4;
+    text-align: center;
+}
+
+/* 띠배너 */
+
+.banner-background {
+    background-color: #C0B3A0;
+    width: 100%;
+    height: 120px;
+    margin-top: 120px;
+}
+
+.text5 {
+    padding-top: 25px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+.text6 {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #313131;
+    text-align: center;
 }
