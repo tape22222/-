@@ -25,6 +25,12 @@ h4 {
     font-weight: 500;
 }
 
+h5 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 500;
+}
+
 p {
     margin: 0px;
 }
@@ -321,7 +327,7 @@ ul, li {
     height: 500px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0px 2px 10px #00000014;
+    box-shadow: 10px 10px 20px #00000040;
     overflow: hidden;
     display: inline-block;
     position: absolute;
@@ -337,7 +343,7 @@ ul, li {
     margin-top: 26px;
     margin-left: 23px;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .card-text {
@@ -380,4 +386,50 @@ ul, li {
     top: 542px;
     left: 90px;
     z-index: -1;
+}
+
+/* 하단 */
+
+footer {
+    border-top: 1px solid #D8D8D8;
+}
+
+.footer {
+    width: 1280px;
+    margin: auto;
+}
+
+.footer h5 {
+    margin-top: 28px;
+}
+
+.footer h5:first-child {
+    margin-top: 50px;
+}
+
+.footer-main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-menu {
+    margin-top: 4px;
+    padding: 0 16px;
+    float: left;
+    border-left: 1px solid #D8D8D8;
+    font-size: 13px;
+    color: #505050;
+}
+
+.footer-main .footer-menu:first-child {
+    padding-left: 0px;
+    border-left: none;
+}
+
+.capyright {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #505050;
 }
