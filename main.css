@@ -7,6 +7,10 @@ div {
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 h2 {
     font-size: 32px;
     margin: 0px;
@@ -61,7 +65,6 @@ p {
 .list-icon {
     width: 24px;
     height: 24px;
-    border: 1px solid black;
     display: inline-block;
     position: absolute;
     top: 23px;
@@ -110,7 +113,6 @@ ul, li {
     width: 64px;
     height: 40px;
     margin-left: 415px;
-    border: 1px solid black;
     display: inline-block;
     position: absolute;
     top: 20px;
@@ -189,7 +191,6 @@ ul, li {
 .info-right-img {
     width: 530px;
     height: 130px;
-    border: 1px solid black;
     display: inline-block;
     position: absolute;
     top: 70px;
@@ -214,7 +215,6 @@ ul, li {
 .button-icon {
     width: 30px;
     height: 30px;
-    border: 1px solid black;
     display: inline-block;
     position: absolute;
     top: 250px;
@@ -230,7 +230,6 @@ ul, li {
     height: 500px;
     margin: auto;
     border-radius: 20px;
-    border: 1px solid black;
 }
 
 .slide-text-box {
@@ -302,24 +301,29 @@ ul, li {
 
 /* 체험 활동 스크롤 */
 
-.scroll-background {
+.scroll-title {
     width: 1280px;
-    height: 2079px;
     margin: auto;
-    position: relative;
 }
 
-.scroll-background h3 {
+.scroll-title h3 {
     margin-top: 105px;
     margin-left: 200px;
 }
 
 .text7 {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 200px;
     font-size: 18px;
     letter-spacing: -0.3px;
     color: #505050;
+}
+
+.scroll-background {
+    width: 1280px;
+    height: 1900px;
+    margin: auto;
+    position: relative;
 }
 
 .card {
@@ -353,27 +357,27 @@ ul, li {
 }
 
 #card1 {
-    top: 172px;
+    top: -5px;
     left: 720px;
 }
 
 #card2 {
-    top: 422px;
+    top: 245px;
     left: 200px;
 }
 
 #card3 {
-    top: 792px;
+    top: 615px;
     left: 720px;
 }
 
 #card4 {
-    top: 1042px;
+    top: 865px;
     left: 200px;
 }
 
 #card5 {
-    top: 1412px;
+    top: 1235px;
     left: 720px;
 }
 
@@ -383,7 +387,7 @@ ul, li {
     text-align: center;
     color: #8E7764;
     position: absolute;
-    top: 542px;
+    top: 395px;
     left: 90px;
     z-index: -1;
 }
