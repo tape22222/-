@@ -205,7 +205,7 @@ ul, li {
     text-align: center;
 }
 
-.slider {
+.carousel {
     width: 1280px;
     height: 610px;
     margin: auto;
@@ -225,11 +225,22 @@ ul, li {
     left: 1220px;
 }
 
+.slider {
+    width: 1060px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 3180px;
+    height: 500px;
+    transition: all 1s;
+}
+
 .slide-image {
     width: 1060px;
-    height: 500px;
-    margin: auto;
     border-radius: 20px;
+    float: left;
 }
 
 .slide-text-box {

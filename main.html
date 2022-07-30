@@ -76,12 +76,23 @@
         <!-- 한옥마을 캐러셀 -->
         <h3 class="text2">한옥마을</h3>
 
-        <div class="slider">
-            <div class="button-icon">
+        <div class="carousel">
+            <div class="button-icon" id="before-button">
                 <img src="icon/left-icon.png" alt="">
             </div>
-            <div class="slide-image">
-                <img src="img/slide1.png" alt="">
+            <div class="slider">
+                <div class="slide-container">
+                    <div class="slide-image">
+                        <img src="img/slide1.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/slide2.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/slide3.png" alt="">
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
             </div>
             <div class="slide-text-box">
                 <p class="text3">북촌한옥마을</p>
@@ -90,7 +101,7 @@
                     <p>자세히 보기</p>
                 </div>
             </div>
-            <div class="button-icon">
+            <div class="button-icon" id="next-button">
                 <img src="icon/right-icon.png" alt="">
             </div>
         </div>
@@ -175,5 +186,35 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        var image_num = 1;
+
+        $('#next-button').on('click', function(){
+            if (image_num == 1) {
+                $('.slide-container').css('transform', 'translateX(-1060px)');
+                image_num++;
+            } else if (image_num == 2) {
+                $('.slide-container').css('transform', 'translateX(-2120px)');
+                image_num++;
+            } else {
+                $('.slide-container').css('transform', 'translateX(0px)');
+                image_num = 0;
+            }
+        });
+
+        $('#before-button').on('click', function(){
+            if (image_num == 1) {
+                $('.slide-container').css('transform', 'translateX(-2120px)');
+                image_num = 3;
+            } else if (image_num == 2) {
+                $('.slide-container').css('transform', 'translateX(0px)');
+                image_num--;
+            } else {
+                $('.slide-container').css('transform', 'translateX(-1060px)');
+                image_num--;
+            }
+        });
+    </script>
 </body>
 </html>
