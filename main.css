@@ -239,7 +239,9 @@ ul, li {
 
 .slide-image {
     width: 1060px;
+    height: 500px;
     border-radius: 20px;
+    overflow: hidden;
     float: left;
 }
 
