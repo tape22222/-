@@ -42,7 +42,7 @@ p {
 /* 상단 */
 .top-background {
     width: 100%;
-    height: 870px;
+    height: 880px;
     background-color: #FBFCFF;
 }
 
@@ -181,11 +181,86 @@ ul, li {
 
 /* 1.연혁 */
 
+.a1-background {
+    width: 1280px;
+    height: 280px;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.a1-title {
+    height: 41px;
+    margin-bottom: 60px;
+}
+
+.a1-title h3 {
+    width: 214px;
+    float: left;
+}
+
+.a1-title p {
+    width: 80px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+.history-item {
+    width: 170px;
+    height: 176px;
+    color: white;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.history-title {
+    margin-top: 33px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+}
+
+#item1 {
+    background-color: #000000;
+}
+
+#item2 {
+    background-color: #151515;
+}
+
+#item3 {
+    background-color: #343434;
+}
+
+#item4 {
+    background-color: #545454;
+}
+
 .history-contents {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
     display: none;
 }
 
+.a1-more-icon {
+    width: 18px;
+    height: 18px;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border: 1px solid white;
+}
 
+.history-contents p:last-child {
+    margin-top: 4px;
+}
 
 /* 하단 */
 
@@ -245,4 +320,10 @@ footer {
     width: 80px;
     color: black;
     border-bottom: 1px solid black;
+}
+
+.a1-check {
+    width: 770px;
+    padding-left: 30px;
+    text-align: left;
 }
