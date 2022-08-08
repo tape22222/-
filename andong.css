@@ -179,7 +179,7 @@ ul, li {
     letter-spacing: -0.5px;
 }
 
-/* 1.연혁 */
+/* 1. 연혁 */
 
 .a1-background {
     width: 1280px;
@@ -246,6 +246,10 @@ ul, li {
     display: none;
 }
 
+.history-contents p {
+    margin-top: 4px;
+}
+
 .a1-more-icon {
     width: 18px;
     height: 18px;
@@ -258,8 +262,101 @@ ul, li {
     border: 1px solid white;
 }
 
-.history-contents p:last-child {
-    margin-top: 4px;
+/* 2. 설명1 */
+
+.a2-background {
+    height: 620px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.a2-background-line {
+    width: 100%;
+    height: 338px;
+    box-shadow: 2px 2px 15px #0000001a;
+    position: absolute;
+    top: 170px;
+    z-index: -1;
+}
+
+.a2-main {
+    width: 1280px;
+    margin: auto;
+}
+
+.a2-contents {
+    margin-top: 43px;
+    font-size: 14px;
+    color: #4D4D4D;
+    letter-spacing: -0.5px;
+    float: left;
+}
+
+.a2-contents h3 {
+    margin-bottom: 121px;
+    color: #000000;
+}
+
+.a2-contents p {
+    margin-top: 20px;
+}
+
+.un-logo {
+    width: 86px;
+    height: 54px;
+    margin-top: 12px;
+    border: 1px solid black;
+}
+
+.a2-image {
+    width: 540px;
+    height: 620px;
+    float: right;
+    border: 1px solid black;
+}
+
+/* 3. 설명2 */
+
+.a3-background {
+    width: 1280px;
+    height: 380px;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.a3-image {
+    width: 620px;
+    height: 380px;
+    float: left;
+    border: 1px solid black;
+}
+
+.a3-contents {
+    margin-left: 60px;
+    margin-top: 115px;
+    float: left;
+}
+
+.a3-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #3D3D3D;
+}
+
+.a3-text {
+    margin-top: 60px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #9A9A9A;
+}
+
+/* 4. 마을 문화 */
+
+.a4-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
 }
 
 /* 하단 */
