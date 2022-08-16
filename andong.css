@@ -359,6 +359,173 @@ ul, li {
     margin-top: 120px;
 }
 
+.a4-background h3 {
+    margin-bottom: 40px;
+}
+
+.a4-list {
+    width: 620px;
+    height: 224px;
+    box-shadow: 2px 2px 15px #0000001a;
+    border-radius: 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.a4-list-left {
+    width: 284px;
+    height: 167px;
+    margin-top: 26px;
+    margin-left: 27px;
+    float: left;
+}
+
+.a4-title {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.a4-subtitle {
+    margin-top: 11px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-listex {
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-list-middle {
+    height: 163px;
+    margin-top: 33px;
+    border-left: 1px solid #C4C4C4;
+    float: left;
+}
+
+.a4-list-right {
+    margin-top: 34px;
+    margin-left: 26px;
+    float: left;
+}
+
+.a4-slide-background {
+    width: 145px;
+    height: 145px;
+    border: 1px solid black;
+}
+
+.a4-slide-list {
+    margin-left: 47px;
+}
+
+.a4-slidebutton {
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    float: left;
+    border: 1px solid black;
+}
+
+.a4-slidenum {
+    margin-left: 9px;
+    margin-right: 7px;
+    float: left;
+}
+
+.a4-slidenum span {
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.a4-slidenum p {
+    font-size: 7px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+}
+
+.a4-slide-ex {
+    margin-top: 37px;
+    margin-left: 17px;
+    float: left;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-shfdl {
+    width: 620px;
+    height: 300px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 15px #0000001a;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.a4-shfdl h2 {
+    text-align: center;
+    line-height: 290px;
+}
+
+.a4-shfdl-ex {
+    margin-top: 40px;
+}
+
+.a4-shfdl-title {
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+.a4-shfdl-sub {
+    margin-top: 58px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-shfdl-sub:last-child {
+    margin-top: 6px;
+}
+
+/* 5. 띠배너 */
+
+.a5-background {
+    width: 100%;
+    height: 120px;
+    margin-top: 120px;
+    background-color: #F0F7FF;
+}
+
+.a5-background p {
+    padding-top: 29px;
+    font-size: 16px;
+    color: #515F86;
+    text-align: center;
+}
+
+.a5-background h4 {
+    color: #303E62;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 6. 체험 프로그램 */
+
+.a6-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
 
 /* 하단 */
 
