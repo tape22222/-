@@ -494,7 +494,7 @@ ul, li {
 }
 
 .a4-shfdl-sub:last-child {
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 /* 5. 띠배너 */
@@ -525,6 +525,55 @@ ul, li {
     width: 1280px;
     margin: auto;
     margin-top: 120px;
+    margin-bottom: 135px;
+}
+
+.a6-item {
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 40px;
+    float: left;
+}
+
+.a6-item:nth-child(4) {
+    margin-right: 0px;
+}
+
+.a6-item-image {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.a6-item-title {
+    margin-top: 26px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    text-align: center;
+}
+
+.a6-item-ex {
+    margin-top: 5px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+.a6-more {
+    width: 70px;
+    height: 20px;
+    margin-top: 24px;
+    margin-left: 162px;
+    background-color: white;
+    border-radius: 10.5px;
+    border: 1px solid #C4C4C4;
+    color: #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    text-align: center;
 }
 
 /* 하단 */
