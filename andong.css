@@ -139,7 +139,6 @@ ul, li {
     position: absolute;
     top: 173px;
     left: 366px;
-    border: 1px solid black;
     background-color: white;
 }
 
@@ -252,14 +251,11 @@ ul, li {
 
 .a1-more-icon {
     width: 18px;
-    height: 18px;
     display: none;
-    z-index: 1;
     position: absolute;
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
-    border: 1px solid white;
 }
 
 /* 2. 설명1 */
@@ -305,14 +301,12 @@ ul, li {
     width: 86px;
     height: 54px;
     margin-top: 12px;
-    border: 1px solid black;
 }
 
 .a2-image {
     width: 540px;
     height: 620px;
     float: right;
-    border: 1px solid black;
 }
 
 /* 3. 설명2 */
@@ -328,7 +322,6 @@ ul, li {
     width: 620px;
     height: 380px;
     float: left;
-    border: 1px solid black;
 }
 
 .a3-contents {
@@ -407,7 +400,7 @@ ul, li {
 }
 
 .a4-list-middle {
-    height: 163px;
+    height: 170px;
     margin-top: 33px;
     border-left: 1px solid #C4C4C4;
     float: left;
@@ -422,19 +415,21 @@ ul, li {
 .a4-slide-background {
     width: 145px;
     height: 145px;
-    border: 1px solid black;
 }
 
 .a4-slide-list {
     margin-left: 47px;
+    margin-top: 3px;
 }
 
 .a4-slidebutton {
+    float: left;
+}
+
+.a4-slidebutton img {
     width: 10px;
     height: 10px;
-    margin-top: 6px;
-    float: left;
-    border: 1px solid black;
+    margin-top: 7px;
 }
 
 .a4-slidenum {
@@ -470,11 +465,19 @@ ul, li {
     box-shadow: 2px 2px 15px #0000001a;
     border-radius: 20px;
     background-color: white;
+    position: relative;
 }
 
 .a4-shfdl h2 {
     text-align: center;
     line-height: 290px;
+}
+
+.a4-shfdl img {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .a4-shfdl-ex {
@@ -543,7 +546,6 @@ ul, li {
     width: 400px;
     height: 250px;
     border-radius: 20px;
-    border: 1px solid black;
 }
 
 .a6-item-title {
