@@ -26,7 +26,6 @@ setInterval(function topSlide(){
 var listItemNum = 1;
 
 document.querySelectorAll('.top-image-list-item')[0].classList.add('this');
-document.querySelectorAll('.top-image-slide')[0].classList.add('opacity');
 setInterval(function topSlide(){
     if(listItemNum == 4) {
         document.querySelectorAll('.top-image-list-item')[listItemNum - 1].classList.remove('this');
