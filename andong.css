@@ -140,6 +140,18 @@ ul, li {
     top: 173px;
     left: 366px;
     background-color: white;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.top-image-slidebc {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 173px;
+    left: 366px;
+    background-color: white;
 }
 
 .top-slide-background {
@@ -167,6 +179,7 @@ ul, li {
     float: left;
     color: #C4C4C4;
     font-size: 13px;
+    transition: color 0.05s width 0.03s;
 }
 
 .top-subtitle {
@@ -628,6 +641,12 @@ footer {
 
 .view {
     display: block;
+    transition: all 1s;
+}
+
+.opacity {
+    opacity: 1;
+    transition: all 1s;
 }
 
 .this {
@@ -636,6 +655,7 @@ footer {
     width: 80px;
     color: black;
     border-bottom: 1px solid black;
+    transition: width 3.5s;
 }
 
 .a1-check {
