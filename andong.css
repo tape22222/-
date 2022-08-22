@@ -227,6 +227,7 @@ ul, li {
     float: left;
     text-align: center;
     position: relative;
+    transition: all 0.5s;
 }
 
 .history-title {
@@ -662,4 +663,5 @@ footer {
     width: 770px;
     padding-left: 30px;
     text-align: left;
+    transition: all 0.5s;
 }
