@@ -84,7 +84,24 @@ for(let i = 0; i < 5; i++) {
     });
 };
 
-/* 마을 문화 슬라이드 */
+/* 마을 문화 슬라이드
+
+https://eunhee-programming.tistory.com/166
+https://velog.io/@sweet_pumpkin/Megabyte-School-%EB%AC%B4%ED%95%9C%EC%9C%BC%EB%A1%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%AC%B4%ED%95%9C%EB%A3%A8%ED%94%84%EC%9E%90%EB%8F%99%EB%B3%80%ED%99%98
+
+function makeClone() {
+    let clone_first = $('.a4-left-slide').eq(0).clone(true);
+    let clone_last = $('.a4-left-slide').eq(a4LeftSlide - 1).clone(true);
+    clone_first.appendTo(a4LeftSlider);
+    clone_last.prependTo(a4LeftSlider);
+};
+
+function initfunction() {
+    a4LeftSlider.css('width', slideWidth * (a4LeftSlide + 2) + 'px');
+    a4RightSlider.css('width', slideWidth * (a4RightSlide + 2) + 'px');
+};
+
+*/
 
 let a4LeftSlider = $('.a4-slide-container').eq(0);
 let a4LeftSlideImg = $('.a4-left-slide');
@@ -103,35 +120,57 @@ let rightIndex = 0;
 
 let slideWidth = 145;
 
-function makeClone() {
-    var clone_first = a4LeftSlideImg[0].clone();
-    let clone_last = a4LeftSlideImg[a4LeftSlide - 1].cloneNode(true);
-    clone_first.appendTo(a4LeftSlider);
-    a4LeftSlider.insertBefore(clone_last, a4LeftSlider);
-};
-console.log(clone_first);
 
-/*function initfunction() {
-    a4LeftSlider.style.width = slideWidth * (a4LeftSlide + 2) + 'px';
-    //a4RightSlider.style.width = slideWidth * (a4RightSlide + 2) + 'px';
-};*/
+// 크기조절 및 클론 생성
+a4LeftSlider.css('width', slideWidth * (a4LeftSlide + 2) + 'px');
+a4LeftSlider.css('transform', `translateX(-${slideWidth}px)`);
+$('.a4-left-slide').eq(0).clone(true).appendTo(a4LeftSlider);
+$('.a4-left-slide').eq(a4LeftSlide - 1).clone(true).prependTo(a4LeftSlider);
 
+// 이전버튼을 누른 경우
 next.on('click', function() {
-    if(leftIndex <= a4LeftSlide - 1) {
-        a4LeftSlider.css('transform', `translateX(-${slideWidth * leftButtonClick}px)`);
+    if(leftIndex < a4LeftSlide - 1) {
         leftButtonClick++;
+        a4LeftSlider.css('transform', `translateX(-${slideWidth * leftButtonClick}px)`);
+        a4LeftSlider.css('transition', 'all 1s');
     }
 
     if(leftIndex === a4LeftSlide - 1) {
+        a4LeftSlider.css('transform', `translateX(-${slideWidth * (leftButtonClick + 1)}px)`);
+
         setTimeout(function() {
-            a4LeftSlider.css('transform', 'translateX(0px)');
+            a4LeftSlider.css('transform', `translateX(-${slideWidth}px)`);
             a4LeftSlider.css('transition', 'all 0s');
         }, 1000);
 
         leftIndex = -1;
         leftButtonClick = 1;
     }
-    console.log(leftButtonClick);
+
     $('.a4-slidenum-left').html(`${leftButtonClick}`);
     leftIndex++;
+});
+
+// 다음 버튼을 누른 경우
+before.on('click', function() {
+    if(leftIndex > 0) {
+        leftButtonClick--;
+        a4LeftSlider.css('transform', `translateX(-${slideWidth * leftButtonClick}px)`);
+        a4LeftSlider.css('transition', 'all 1s');
+    }
+
+    if(leftIndex === 0) {
+        a4LeftSlider.css('transform', `translateX(0px)`);
+
+        setTimeout(function() {
+            a4LeftSlider.css('transform', `translateX(-${slideWidth * a4LeftSlide}px)`);
+            a4LeftSlider.css('transition', 'all 0s');
+        }, 1000);
+
+        leftIndex = a4LeftSlide;
+        leftButtonClick = a4LeftSlide;
+    }
+
+    $('.a4-slidenum-left').html(`${leftButtonClick}`);
+    leftIndex--;
 });
