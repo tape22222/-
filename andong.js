@@ -83,3 +83,55 @@ for(let i = 0; i < 5; i++) {
         }
     });
 };
+
+/* 마을 문화 슬라이드 */
+
+let a4LeftSlider = $('.a4-slide-container').eq(0);
+let a4LeftSlideImg = $('.a4-left-slide');
+let a4LeftSlide = a4LeftSlideImg.length;
+
+let a4RightSlider = $('.a4-slide-container').eq(1);
+let a4RightSlideImg = $('.a4-right-slide');
+let a4RightSlide = a4RightSlideImg.length;
+
+let before = $('#a4-slide-leftbutton');
+let next = $('#a4-slide-rightbutton');
+
+let leftIndex = 0;
+let leftButtonClick = 1;
+let rightIndex = 0;
+
+let slideWidth = 145;
+
+function makeClone() {
+    var clone_first = a4LeftSlideImg[0].clone();
+    let clone_last = a4LeftSlideImg[a4LeftSlide - 1].cloneNode(true);
+    clone_first.appendTo(a4LeftSlider);
+    a4LeftSlider.insertBefore(clone_last, a4LeftSlider);
+};
+console.log(clone_first);
+
+/*function initfunction() {
+    a4LeftSlider.style.width = slideWidth * (a4LeftSlide + 2) + 'px';
+    //a4RightSlider.style.width = slideWidth * (a4RightSlide + 2) + 'px';
+};*/
+
+next.on('click', function() {
+    if(leftIndex <= a4LeftSlide - 1) {
+        a4LeftSlider.css('transform', `translateX(-${slideWidth * leftButtonClick}px)`);
+        leftButtonClick++;
+    }
+
+    if(leftIndex === a4LeftSlide - 1) {
+        setTimeout(function() {
+            a4LeftSlider.css('transform', 'translateX(0px)');
+            a4LeftSlider.css('transition', 'all 0s');
+        }, 1000);
+
+        leftIndex = -1;
+        leftButtonClick = 1;
+    }
+    console.log(leftButtonClick);
+    $('.a4-slidenum-left').html(`${leftButtonClick}`);
+    leftIndex++;
+});
