@@ -39,6 +39,11 @@ p {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    margin: 0px;
+}
+
 /* nav */
 .nav-background {
     width: 100%;
@@ -155,6 +160,7 @@ ul, li {
     position: absolute;
     top: -60px;
     background-color: #1F273D;
+    cursor: pointer;
 }
 
 /* 2구역 홈페이지 소개*/
@@ -219,6 +225,7 @@ ul, li {
     position: absolute;
     top: 250px;
     left: 30px;
+    cursor: pointer;
 }
 
 .button-icon:last-child {
