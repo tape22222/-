@@ -46,6 +46,8 @@ a {
 
 /* 상단 */
 .top-background {
+    width: 100%;
+    height: 1240px;
 }
 
 /* nav */
