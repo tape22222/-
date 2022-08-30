@@ -7,6 +7,10 @@ div {
     box-sizing: border-box;
 }
 
+ul, li {
+    padding: 0px;
+}
+
 img {
     width: 100%;
 }
@@ -176,6 +180,54 @@ ul, li {
     text-align: center;
 }
 
+.j1-yearlist {
+    margin-top: 30px;
+}
+
+.j1-yearlist-title {
+    margin-left: 180px;
+    float: left;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #C8C8C8;
+}
+
+.j1-yearlist-title:first-child {
+    margin-left: 130px;
+}
+
+.j1-yearlist-item {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #00000008;
+    overflow: hidden;
+}
+
+.j1-list {
+    width: 300px;
+    margin-left: 75px;
+    float: left;
+}
+
+.j1-list:first-child {
+    margin-left: 115px;
+}
+
+.j1-list p {
+    font-size: 21px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #000000;
+}
+
+.j1-sublist {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
 /* 하단 */
 
 footer {
@@ -230,4 +282,8 @@ footer {
 
 .right {
     float: right;
+}
+
+.fblack {
+    color: #000000;
 }
