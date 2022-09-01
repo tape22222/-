@@ -9,6 +9,7 @@ div {
 
 ul, li {
     padding: 0px;
+    margin: 0px;
 }
 
 img {
@@ -198,15 +199,45 @@ ul, li {
 
 .j1-yearlist-item {
     width: 100%;
-    height: 500px;
+    height: 344px;
     margin-top: 50px;
     border-radius: 20px;
     background-color: #00000008;
     overflow: hidden;
+    position: relative;
+}
+
+.j1-yearlist-line {
+    margin-top: 70px;
+    margin-bottom: 5px;
+    margin-left: 260px;
+    position: relative;
+}
+
+.j1-year-dot {
+    width: 10px;
+    height: 10px;
+    margin-left: 365px;
+    border-radius: 100%;
+    background-color: #1F273D;
+    float: left;
+}
+
+.j1-year-dot:first-child {
+    margin-left: 0px;
+}
+
+.j1-year-line {
+    width: 760px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;
 }
 
 .j1-list {
     width: 300px;
+    margin-top: 5px;
     margin-left: 75px;
     float: left;
 }
@@ -223,12 +254,179 @@ ul, li {
 }
 
 .j1-sublist {
+    margin-top: 30px;
+    position: relative;
+}
+
+.j1-sublist p {
+    margin-left: 9px;
     font-size: 14px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #4D4D4D;
+}
+
+.j1-list-style {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.j1-listnum {
+    width: 300px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    left: 490px;
+    bottom: 70px;
+}
+
+/* 2. 관광안내 */
+
+.j2-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.j2-subtitle {
+    margin-top: 17px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+.j2-morebutton {
+    width: 80px;
+    height: 19px;
+    margin-top: 22px;
+    margin-left: 13px;
+    padding-top: 1px;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+    background-color: #ffffff;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+    float: left;
+}
+
+.j2-contents {
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 40px;
+    float: left;
+}
+
+.j2-contents:first-child {
+    margin-left: 0px;
+}
+
+.j2-slide-container {
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.j2-slide {
+    width: 1200px;
+    transition: all 1s;
+}
+
+.j2-slide-image {
+    width: 400px;
+    height: 250px;
+    float: left;
+}
+
+.j2-slide-remote {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.j2-slide-button {
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+    float: left;
+    border: 1px solid black;
+}
+
+.j2-slide-title {
+    margin: 0px 5px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+/* 3. 한옥의 별 설명 */
+
+.j3-background {
+    margin-top: 120px;
+    position: relative;
+}
+
+.j3-backline {
+    width: 100%;
+    height: 370px;
+    background-color: #c0b3a01a;
+    z-index: -1;
+}
+
+.j3-main {
+    width: 1280px;
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.j3-image {
+    width: 620px;
+    height: 360px;
+    float: left;
+    border: 1px solid black;
+}
+
+.j3-text {
+    margin-top: 6px;
+    margin-left: 100px;
+    float: left;
+    position: relative;
+}
+
+.j3-textdeco {
+    height: 53px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.j3-ex {
+    margin-top: 8px;
+    font-size: 16px;
     letter-spacing: -0.5px;
     color: #4D4D4D;
 }
 
-
+.j3-morebutton {
+    width: 93px;
+    height: 25px;
+    margin-top: 17px;
+    border-radius: 17px;
+    background-color: #c0b3a000;
+    border: 1px solid #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+}
 
 /* 하단 */
 
