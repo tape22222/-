@@ -369,6 +369,7 @@ ul, li {
 
 .j3-background {
     margin-top: 120px;
+    height: 440px;
     position: relative;
 }
 
@@ -426,6 +427,155 @@ ul, li {
     font-size: 9px;
     letter-spacing: -0.5px;
     color: #C4C4C4;
+}
+
+/* 4. 체험 컨텐츠 */
+
+.j4-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.j4-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j4-contents-box {
+    margin-top: 40px;
+}
+
+.j4-contents {
+    width: 224px;
+    margin-left: 40px;
+    margin-top: 30px;
+    float: left;
+}
+
+.j4-contents:first-child {
+    margin-left: 0px;
+}
+
+.j4-contents:nth-child(6) {
+    margin-left: 0px;
+}
+
+.j4-hoverbox {
+    width: 214px;
+    height: 214px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 17px;
+    background-color: #ffffffb3;
+    z-index: 2;
+    position: relative;
+    display: none;
+}
+
+.j4-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #9AC2EC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j4-rowLine {
+    width: 16px;
+    height: 1px;
+    background-color: #1F273D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j4-colLine {
+    width: 1px;
+    height: 16px;
+    background-color: #1F273D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j4-contents-image {
+    width: 224px;
+    height: 224px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.j4-contents-title {
+    margin-top: 13px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+/* 5. 정보 */
+
+.j5-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+
+.j5-title {
+    float: left;
+}
+
+.j5-morebutton {
+    width: 55px;
+    height: 17px;
+    margin-top: 18px;
+    margin-left: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+    float: left;
+}
+
+.j5-infoitem {
+    width: 620px;
+    height: 60px;
+    border-top: 1px solid #C4C4C4;
+    position: relative;
+}
+
+.j5-infoitem:first-child {
+    margin-top: 30px;
+    border-top: none;
+}
+
+.j5-item-title {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.j5-item-view {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+    border: 1px solid black;
 }
 
 /* 하단 */
