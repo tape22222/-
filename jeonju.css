@@ -330,7 +330,6 @@ ul, li {
 
 .j2-slide-container {
     overflow: hidden;
-    border: 1px solid black;
 }
 
 .j2-slide {
@@ -349,12 +348,11 @@ ul, li {
     margin-left: 120px;
 }
 
-.j2-slide-button {
+.j2-slide-button img {
     width: 14px;
     height: 14px;
     margin-top: 4px;
     float: left;
-    border: 1px solid black;
 }
 
 .j2-slide-title {
@@ -393,7 +391,6 @@ ul, li {
     width: 620px;
     height: 360px;
     float: left;
-    border: 1px solid black;
 }
 
 .j3-text {
@@ -510,7 +507,6 @@ ul, li {
     width: 224px;
     height: 224px;
     border-radius: 20px;
-    border: 1px solid black;
 }
 
 .j4-contents-title {
@@ -568,14 +564,13 @@ ul, li {
     transform: translate(0, -50%);
 }
 
-.j5-item-view {
+.j5-item-view img {
     width: 9px;
     height: 9px;
     position: absolute;
     top: 50%;
     right: 5px;
     transform: translate(0, -50%);
-    border: 1px solid black;
 }
 
 /* 하단 */
