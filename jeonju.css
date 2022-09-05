@@ -161,10 +161,15 @@ ul, li {
     position: relative;
     float: left;
     margin-left: 20px;
-    /*height: 340px;
+    clip-path: inset(645px 0px 0px round 20px);
+    transition: all 2s;
+}
+    /*clip-path: inset(0px 0px 645px round 20px);*/
+    /* https://ishadeed.com/article/clip-path/
+    height: 340px;
     margin-top: 645px;
     border-radius: 20px;
-    border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 .top {
@@ -183,7 +188,7 @@ ul, li {
     position: absolute;
     bottom: 0;
     z-index: 2;
-}
+}*/
 
 .main-card:first-child {
     margin-left: 0px;
@@ -218,13 +223,20 @@ ul, li {
 }
 
 .j1-yearlist-item {
-    width: 100%;
+    width: 1280px;
     height: 344px;
     margin-top: 50px;
     border-radius: 20px;
     background-color: #00000008;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.j1- {
+    width: 2560px;
+    /*transition: all 1s;
+    transform: translateX(-1280px);*/
 }
 
 .j1-yearlist-line {
@@ -247,6 +259,10 @@ ul, li {
     margin-left: 0px;
 }
 
+.j1-year-dot:nth-child(4) {
+    margin-left: 520px;
+}
+
 .j1-year-line {
     width: 760px;
     border-top: 1px solid #C8C8C8;
@@ -254,6 +270,21 @@ ul, li {
     position: absolute;
     top: 4px;
 }
+
+.j1-year-line-long {
+    width: 1665px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;
+}
+
+.j1-year-line-middle{
+    width: 1290px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;}
 
 .j1-list {
     width: 300px;
@@ -264,6 +295,10 @@ ul, li {
 
 .j1-list:first-child {
     margin-left: 115px;
+}
+
+.j1-list:nth-child(4) {
+    margin-left: 230px;
 }
 
 .j1-list p {
@@ -289,21 +324,33 @@ ul, li {
 .j1-list-style {
     width: 4px;
     height: 4px;
+    margin-top: 8px;
     border-radius: 100%;
     background-color: #000000;
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
 }
-
 
 .j1-listnum {
     width: 300px;
     height: 4px;
-    background-color: #000000;
+    background-color: #C8C8C8;
     position: absolute;
     left: 490px;
-    bottom: 70px;
+    bottom: 45px;
+}
+
+.j1-listnum-full {
+    width: 100%;
+    height: 4px;
+    background-color: #1F273D;
+}
+
+.j1-listnum-half {
+    width: 50%;
+    height: 4px;
+    background-color: #1F273D;
+    position: absolute;
+    /*left: 50%;*/
 }
 
 /* 2. 관광안내 */
@@ -335,6 +382,7 @@ ul, li {
     letter-spacing: -0.5px;
     color: #C4C4C4;
     float: left;
+    cursor: pointer;
 }
 
 .j2-contents {
@@ -444,6 +492,7 @@ ul, li {
     font-size: 9px;
     letter-spacing: -0.5px;
     color: #C4C4C4;
+    cursor: pointer;
 }
 
 /* 4. 체험 컨텐츠 */
@@ -480,16 +529,23 @@ ul, li {
     margin-left: 0px;
 }
 
+.j4-contents-image {
+    width: 224px;
+    height: 224px;
+    border-radius: 20px;
+    position: relative;
+}
+
 .j4-hoverbox {
     width: 214px;
     height: 214px;
-    margin: auto;
-    margin-top: 5px;
     border-radius: 17px;
     background-color: #ffffffb3;
-    z-index: 2;
-    position: relative;
-    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
 }
 
 .j4-circle {
@@ -501,6 +557,7 @@ ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .j4-rowLine {
@@ -521,12 +578,6 @@ ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.j4-contents-image {
-    width: 224px;
-    height: 224px;
-    border-radius: 20px;
 }
 
 .j4-contents-title {
@@ -562,6 +613,7 @@ ul, li {
     letter-spacing: -0.5px;
     color: #C4C4C4;
     float: left;
+    cursor: pointer;
 }
 
 .j5-infoitem {
@@ -584,13 +636,154 @@ ul, li {
     transform: translate(0, -50%);
 }
 
-.j5-item-view img {
+.j5-item-view {
     width: 9px;
     height: 9px;
     position: absolute;
     top: 50%;
     right: 5px;
     transform: translate(0, -50%);
+}
+
+.j5-rowLine {
+    width: 100%;
+    height: 1px;
+    background-color: #4D4D4D;
+    position: absolute;
+    top: 4px;
+}
+
+.j5-colLine {
+    width: 1px;
+    height: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    left: 4px;
+}
+
+.j5-left {
+    margin-left: 3px;
+    display: none;
+}
+
+.j5-right {
+    margin-left: 3px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    display: none;
+}
+
+.j5-left1-item {
+    margin-bottom: 13px;
+}
+
+.j5-left1-itemTitle {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    float: left;
+}
+
+.j5-left1-ex {
+    margin-left: 10px;
+    float: left;
+}
+
+.j5-left1-itemSubtitle {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left1-itemEx {
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #6A6A6A;
+}
+
+.j5-left2-title {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left2-course {
+    margin: 35px 65px 18px;
+}
+
+.j5-left2-courseLine {
+    position: relative;
+}
+
+.j5-left2-dot {
+    width: 5px;
+    height: 5px;
+    margin-left: 85px;
+    border-radius: 100%;
+    background-color: #1F273D;
+    float: left;
+}
+
+.j5-left2-dot:first-child {
+    margin-left: 18px;
+}
+
+.j5-left2-line {
+    width: 490px;
+    height: 1px;
+    background-color: #C8C8C8;
+    position: absolute;
+    top: 2px;
+    z-index: -1;
+}
+
+.j5-left2-courseName {
+    margin-top: 10px;
+}
+
+.j5-left2-courseName li {
+    width: 40px;
+    margin-left: 50px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #4D4D4D;
+    float: left;
+}
+
+.j5-left2-courseName li:first-child{
+    margin-left: 0px;
+}
+
+.j5-left3-title {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left3-subTitle {
+    margin-top: 5px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left3-subTitle:nth-child(2) {
+    margin-top: 10px;
+}
+
+.j5-left3-subTitle span {
+    color: #000000;
+}
+
+.j5-right-ad {
+    margin-top: 4px;
+}
+
+.j5-right-ex {
+    margin-top: 12px;
 }
 
 /* 하단 */
@@ -640,6 +833,10 @@ footer {
 }
 
 /* event */
+
+.view {
+    display: block;
+}
 
 .left {
     float: left;
