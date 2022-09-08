@@ -5,3 +5,97 @@
     //# sourceMappingURL=jquery.min.map
 
 
+// 1. 연혁 - 리스트 클릭 시 변경
+
+for(let i = 0; i < $('.j1-yearlist-title').length; i++) {
+    $('.j1-yearlist-title').eq(i).on('click', function() {
+        $('.j1-yearlist-title').removeClass('fblack');
+        $('.j1-yearlist-title').eq(i).addClass('fblack');
+        $('.j1-yearlist-item').removeClass('view');
+        $('.j1-yearlist-item').eq(i).addClass('view');
+        $('.j1-').css('transform', 'translateX(0px)');
+        $('.j1-listnum-half').css('transform', 'translateX(0px)');
+    })
+};
+
+// 연혁 넘기기 - 목차 클릭
+
+var halfIsLeft = true;
+
+$('.j1-listnum').on('click', function(e) {
+    if($(e.target).is($('.j1-listnum'))) {
+        if(halfIsLeft) {
+            $('.j1-').css('transform', 'translateX(-1280px)');
+            $('.j1-listnum-half').css('transform', 'translateX(100%)');
+            halfIsLeft = false;
+        } else {
+            $('.j1-').css('transform', 'translateX(0px)');
+            $('.j1-listnum-half').css('transform', 'translateX(0px)');
+            halfIsLeft = true;
+        }
+    };
+})
+
+// 연혁 넘기기 - 스와이프
+
+let xStart = 0;
+let click = false;
+let nextPage = false;
+
+$('.j1-').on('mousedown', function(e) {
+    xStart = e.clientX;
+    click = true;
+
+    $('.j1-listnum-half').css('transform', 'translateX(0px)');
+});
+
+$('.j1-').on('mouseup', function(e) {
+    click = false;
+
+    if(e.clientX - xStart <= -300) {
+        $('.j1-').css('transition', 'all 0.7s').css('transform', 'translateX(-1280px)');
+        $('.j1-listnum-half').css('transform', 'translateX(100%)');
+    } else {
+        $('.j1-').css('transition', 'all 0.7s').css('transform', 'translateX(0px)');
+    }
+    
+    xStart = 0;
+
+    setTimeout(()=>{
+      $('.j1-').css('transition', 'none')
+    }, 1000)
+});
+
+$('.j1-').on('mousemove', function(e) {
+    if(e.clientX - xStart <= 0) {
+        if(click == true){
+            $('.j1-').css('transform', `translateX(${e.clientX - xStart}px)`);
+        }
+    }
+})
+
+// 5. 정보 더보기
+
+$('.j5-LInfo').eq(0).on('click', function() {
+    $('.j5-left').eq(0).toggle('view');
+})
+
+$('.j5-LInfo').eq(1).on('click', function() {
+    $('.j5-left').eq(1).toggle('view');
+})
+
+$('.j5-LInfo').eq(2).on('click', function() {
+    $('.j5-left').eq(2).toggle('view');
+})
+
+$('.j5-RInfo').eq(0).on('click', function() {
+    $('.j5-right').eq(0).toggle('view');
+})
+
+$('.j5-RInfo').eq(1).on('click', function() {
+    $('.j5-right').eq(1).toggle('view');
+})
+
+$('.j5-RInfo').eq(2).on('click', function() {
+    $('.j5-right').eq(2).toggle('view');
+})

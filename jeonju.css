@@ -220,6 +220,7 @@ ul, li {
     font-size: 18px;
     letter-spacing: -0.5px;
     color: #C8C8C8;
+    cursor: pointer;
 }
 
 .j1-yearlist-title:first-child {
@@ -239,8 +240,7 @@ ul, li {
 
 .j1- {
     width: 2560px;
-    /*transition: all 1s;
-    transform: translateX(-1280px);*/
+    height: 226px;
 }
 
 .j1-yearlist-line {
@@ -354,7 +354,8 @@ ul, li {
     height: 4px;
     background-color: #1F273D;
     position: absolute;
-    /*left: 50%;*/
+    transition: all 0.7s;
+    cursor: pointer;
 }
 
 /* 2. 관광안내 */
