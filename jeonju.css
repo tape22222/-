@@ -341,6 +341,7 @@ ul, li {
     position: absolute;
     left: 490px;
     bottom: 45px;
+    cursor: pointer;
 }
 
 .j1-listnum-full {
@@ -355,7 +356,6 @@ ul, li {
     background-color: #1F273D;
     position: absolute;
     transition: all 0.7s;
-    cursor: pointer;
 }
 
 /* 2. 관광안내 */

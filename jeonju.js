@@ -25,11 +25,11 @@ var halfIsLeft = true;
 $('.j1-listnum').on('click', function(e) {
     if($(e.target).is($('.j1-listnum'))) {
         if(halfIsLeft) {
-            $('.j1-').css('transform', 'translateX(-1280px)');
+            $('.j1-').css('transition', 'all 0.7s').css('transform', 'translateX(-1280px)');
             $('.j1-listnum-half').css('transform', 'translateX(100%)');
             halfIsLeft = false;
         } else {
-            $('.j1-').css('transform', 'translateX(0px)');
+            $('.j1-').css('transition', 'all 0.7s').css('transform', 'translateX(0px)');
             $('.j1-listnum-half').css('transform', 'translateX(0px)');
             halfIsLeft = true;
         }
@@ -73,6 +73,76 @@ $('.j1-').on('mousemove', function(e) {
         }
     }
 })
+
+// 2. 관광 안내 슬라이드
+
+let j2Slider1 = $('#j2-slide1');
+let j2Slider2 = $('#j2-slide2');
+let j2Slider3 = $('#j2-slide3');
+let j2SlideImg = $('.j2-slide');
+let j2Slide = 3;
+
+let before = $('.j2-slide-leftbutton');
+let next = $('.j2-slide-rightbutton');
+
+let index = [1, 1, 1];
+let buttonClick = 1;
+
+let slideWidth = 400;
+
+// 크기조절 및 클론 생성
+j2SlideImg.css('width', slideWidth * (j2Slide + 2) + 'px');
+j2SlideImg.css('transform', `translateX(-${slideWidth}px)`);
+$('.j2-slide1').eq(0).clone(true).appendTo(j2Slider1);
+$('.j2-slide1').eq(j2Slide - 1).clone(true).prependTo(j2Slider1);
+$('.j2-slide2').eq(0).clone(true).appendTo(j2Slider2);
+$('.j2-slide2').eq(j2Slide - 1).clone(true).prependTo(j2Slider2);
+$('.j2-slide3').eq(0).clone(true).appendTo(j2Slider3);
+$('.j2-slide3').eq(j2Slide - 1).clone(true).prependTo(j2Slider3);
+
+// 다음 버튼을 누른 경우
+for(let i = 0; i < j2Slide; i++) {
+    next.eq(i).on('click', function() {
+        if(index[i] < j2Slide + 1) {
+            j2SlideImg.eq(i).css('transform', `translateX(-${slideWidth * (index[i] + 1)}px)`);
+            j2SlideImg.eq(i).css('transition', 'all 1s');
+    
+            if(index[i] === j2Slide) {
+                setTimeout(function() {
+                    j2SlideImg.eq(i).css('transform', `translateX(-${slideWidth}px)`);
+                    j2SlideImg.eq(i).css('transition', 'all 0s');
+                }, 1000);
+        
+                index[i] = 0;
+            }
+        }
+    
+        index[i]++;
+    });
+}
+
+// 이전 버튼을 누른 경우
+for(let i = 0; i < j2Slide; i++) {
+    before.eq(i).on('click', function() {
+        if(index[i] > 1) {
+            j2SlideImg.eq(i).css('transform', `translateX(-${slideWidth * (index[i] - 1)}px)`);
+            j2SlideImg.eq(i).css('transition', 'all 1s');
+        }
+    
+        if(index[i] === 1) {
+            j2SlideImg.eq(i).css('transform', 'translateX(0px)');
+            
+            setTimeout(function() {
+                j2SlideImg.eq(i).css('transform', `translateX(-${slideWidth * j2Slide}px)`);
+                j2SlideImg.eq(i).css('transition', 'all 0s');
+            }, 1000);
+    
+            index[i] = 4;
+        }
+    
+        index[i]--;
+    });
+}
 
 // 5. 정보 더보기
 
