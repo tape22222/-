@@ -25,20 +25,20 @@
                     <li class="menu">
                         <p>한옥정보</p>
                         <ul class="sub-menu">
-                            <li><a href="">한옥이란</a></li>
+                            <li onclick="window.open('info.html')">한옥이란</li>
                         </ul>
                     </li>
                     <li class="menu">
                         <p>한옥마을</p>
                         <ul class="sub-menu">
-                            <li><a href="">북촌한옥마을</a></li>
-                            <li><a href="">전주한옥마을</a></li>
-                            <li><a href="">안동하회마을</a></li>
+                            <li onclick="window.open('bukchon.html')">북촌한옥마을</li>
+                            <li onclick="window.open('jeonju.html')">전주한옥마을</li>
+                            <li onclick="window.open('andong.html')">안동하회마을</li>
                         </ul>
                     </li>
                 </ul>
                 <div class="main-logo">
-                    <img src="icon/main-logo.png" alt="">
+                    <img onclick="window.location.href = 'index.html'" src="icon/main-logo.png" alt="">
                 </div>
             </nav>
         </div>
@@ -92,29 +92,29 @@
                     <div class="slide-image">
                         <img src="img/main/slide3.png" alt="">
                     </div>
-                    <div style="clear: both;"></div>
                 </div>
+                <div style="clear: both;"></div>
             </div>
             <div class="slide-text-box-background"></div>
             <div class="slide-text-box opacity15s">
                 <p class="text3">북촌한옥마을</p>
                 <p class="text4">서울 종로구에 위치하며 근현대시기의 모습을 간직하고 있습니다.</p>
                 <div class="more-button">
-                    <a href=""><p>자세히 보기</p></a>
+                    <p>자세히 보기</p>
                 </div>
             </div>
             <div class="slide-text-box">
                 <p class="text3">전주한옥마을</p>
                 <p class="text4">전주시에 위치하며 전통 한옥, 서예 박물관, 전통술 박물관이 있는 문화 마을입니다.</p>
                 <div class="more-button">
-                    <a href=""><p>자세히 보기</p></a>
+                    <p>자세히 보기</p>
                 </div>
             </div>
             <div class="slide-text-box">
                 <p class="text3">안동하회마을</p>
                 <p class="text4">안동시에 위치하며 유네스코 세계 유산으로 지정된 전통 민속마을입니다.</p>
                 <div class="more-button">
-                    <a href="andong.html"><p>자세히 보기</p></a>
+                    <p>자세히 보기</p>
                 </div>
             </div>
             <div class="button-icon" id="next-button">
@@ -206,45 +206,6 @@
         </footer>
     </div>
 
-    <script>
-        var image_num = 0;
-        $('#next-button').on('click', function(){ 
-            if (image_num == 0) {
-                $('.slide-container').css('transform', 'translateX(-1060px)');
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(1).addClass('opacity15s');
-                image_num++;
-            } else if (image_num == 1) {
-                $('.slide-container').css('transform', 'translateX(-2120px)');
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(2).addClass('opacity15s');
-                image_num++;
-            } else {
-                $('.slide-container').css('transform', 'translateX(0px)');
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(0).addClass('opacity15s');
-                image_num = 0;
-            }
-        });
-
-        $('#before-button').on('click', function(){
-            if (image_num == 0) {
-                $('.slide-container').css('transform', 'translateX(-2120px)');   
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(2).addClass('opacity15s');
-                image_num = 2;
-            } else if (image_num == 1) {
-                $('.slide-container').css('transform', 'translateX(0px)');
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(0).addClass('opacity15s');
-                image_num--;
-            } else {
-                $('.slide-container').css('transform', 'translateX(-1060px)');
-                $('.slide-text-box').removeClass('opacity15s');
-                $('.slide-text-box').eq(1).addClass('opacity15s');
-                image_num--;
-            }
-        });
-    </script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

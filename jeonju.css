@@ -844,6 +844,11 @@ footer {
 
 /* event */
 
+.opacity1s {
+    opacity: 1;
+    transition: all 1s;
+}
+
 .view {
     display: block;
 }

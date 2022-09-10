@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>하녹리</title>
     <link href="icon/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="jeonju.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
@@ -24,20 +25,20 @@
                 <li class="menu">
                     <p>한옥정보</p>
                     <ul class="sub-menu">
-                        <li><a href="">한옥이란</a></li>
+                        <li onclick="window.open('info.html')">한옥이란</li>
                     </ul>
                 </li>
                 <li class="menu">
                     <p>한옥마을</p>
                     <ul class="sub-menu">
-                        <li><a href="">북촌한옥마을</a></li>
-                        <li><a href="">전주한옥마을</a></li>
-                        <li><a href="">안동하회마을</a></li>
+                        <li onclick="window.open('bukchon.html')">북촌한옥마을</li>
+                        <li onclick="window.open('jeonju.html')">전주한옥마을</li>
+                        <li onclick="window.open('andong.html')">안동하회마을</li>
                     </ul>
                 </li>
             </ul>
             <div class="main-logo">
-                <img src="icon/main-logo.png" alt="">
+                <img onclick="window.location.href = 'index.html'" src="icon/main-logo.png" alt="">
             </div>
         </nav>
         <!-- 상단 메인부분 -->

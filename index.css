@@ -86,14 +86,27 @@ a {
 }
 
 .menu {
-    width: 75px;
+    width: 80px;
     margin-left: 25px;
     float: left;
     text-align: center;
 }
 
 .sub-menu {
+    margin-top: 3px;
     padding: 0px;
+    background-color: #ffffff4d;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.sub-menu li {
+    padding: 4px 0px 5px;
+    border-bottom: 1px solid #1f273d66;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: black;
 }
 
 .menu p {
@@ -101,14 +114,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     color: black;
-}
-
-.sub-menu a {
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: -0.5px;
-    color: black;
-    display: none;
 }
 
 ul, li {
@@ -477,7 +482,16 @@ footer {
 
 /* event */
 
+.menu:hover > .sub-menu {
+    opacity: 1;
+}
+
 .opacity15s {
     opacity: 1;
     transition: all 1.5s;
+}
+
+.opacity1s {
+    opacity: 1;
+    transition: all 1s;
 }

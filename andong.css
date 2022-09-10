@@ -626,9 +626,10 @@ ul, li {
     font-size: 9px;
     letter-spacing: -0.5px;
     text-align: center;
+    cursor: pointer;
 }
 
-.a6-more a {
+.a6-more p {
     color: #C4C4C4;
 }
 
@@ -694,6 +695,11 @@ footer {
 }
 
 .opacity {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.opacity1s {
     opacity: 1;
     transition: all 1s;
 }
