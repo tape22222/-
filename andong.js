@@ -71,7 +71,7 @@ setInterval(function topSlide(){
     }
 }, 4000);
 
-/* 슬라이드 인덱스 클릭 시 */
+/* 슬라이드 인덱스 클릭 시
 
 for(let i = 0; i < 4; i++) {
     $('.top-image-list-item').eq(i).on('click', function() {
@@ -80,7 +80,7 @@ for(let i = 0; i < 4; i++) {
         $('.top-image-list-item').eq(i).addClass('this');
         $('..top-image-slide').eq(i).addClass('opacity');
     });
-};
+}; */
 
 /* 연혁 클릭 시 */
 

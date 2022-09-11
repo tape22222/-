@@ -116,10 +116,10 @@ before.on('click', function() {
 
 $('.more-button').on('click', function(e) {
     if(buttonClick == 1) {
-        window.open('bukchon.html');
+        window.location.href = 'bokchon.html';
     } else if(buttonClick == 2) {
-        window.open('jeonju.html');
+        window.location.href = 'jeonju.html';
     } else {
-        window.open('andong.html');
+        window.location.href = 'andong.html';
     }
 })

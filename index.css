@@ -74,6 +74,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 23px;
+    cursor: pointer;
 }
 
 /* 목차 리스트 */
@@ -129,6 +130,7 @@ ul, li {
     top: 20px;
     left: 50%;
     transform: translate(-50%, 0);
+    cursor: pointer;
 }
 
 /* 2구역 한옥 더보기 */
@@ -305,6 +307,7 @@ ul, li {
     margin-top: 25px;
     border-radius: 10px;
     border: 1px solid #C4C4C4;
+    cursor: pointer;
 }
 
 .more-button p {
