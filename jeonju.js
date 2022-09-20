@@ -161,6 +161,9 @@ for(let i = 0; i < $('.j5-LInfo').length; i++) {
     $('.j5-LInfo').eq(i).on('click', function() {
         $('.j5-left').eq(i).toggle('view');
     })
+}
+
+for(let i = 0; i < $('.j5-RInfo').length; i++) {
     $('.j5-RInfo').eq(i).on('click', function() {
         $('.j5-right').eq(i).toggle('view');
     })
