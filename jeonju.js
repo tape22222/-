@@ -157,28 +157,11 @@ for(let i = 0; i < j2Slide; i++) {
     });
 }
 
-// 5. 정보 더보기
-
-$('.j5-LInfo').eq(0).on('click', function() {
-    $('.j5-left').eq(0).toggle('view');
-})
-
-$('.j5-LInfo').eq(1).on('click', function() {
-    $('.j5-left').eq(1).toggle('view');
-})
-
-$('.j5-LInfo').eq(2).on('click', function() {
-    $('.j5-left').eq(2).toggle('view');
-})
-
-$('.j5-RInfo').eq(0).on('click', function() {
-    $('.j5-right').eq(0).toggle('view');
-})
-
-$('.j5-RInfo').eq(1).on('click', function() {
-    $('.j5-right').eq(1).toggle('view');
-})
-
-$('.j5-RInfo').eq(2).on('click', function() {
-    $('.j5-right').eq(2).toggle('view');
-})
+for(let i = 0; i < $('.j5-LInfo').length; i++) {
+    $('.j5-LInfo').eq(i).on('click', function() {
+        $('.j5-left').eq(i).toggle('view');
+    })
+    $('.j5-RInfo').eq(i).on('click', function() {
+        $('.j5-right').eq(i).toggle('view');
+    })
+}
